@@ -1,0 +1,226 @@
+1.what is operator?
+A operator is a symbol used to perform an operation on values or variables
+
+example:
+int a= 10;
+int b=15;
+int result = a+b;
+  
+
+2.Types of Operators
+
+1. Arithmetic Operators
+
+Used to perform mathematical calculations.
+
+Operator	Meaning	Example	Result
++	Addition	10 + 5	15
+-	Subtraction	10 - 5	5
+*	Multiplication	10 * 5	50
+/	Division	10 / 5	2
+%	Modulus (remainder)	10 % 3	1
+
+Example:
+
+int a = 10;
+int b = 3;
+
+System.out.println(a + b); // 13
+System.out.println(a - b); // 7
+System.out.println(a * b); // 30
+System.out.println(a / b); // 3
+System.out.println(a % b); // 1
+
+Important:
+
+2. Relational / Comparison Operators
+
+Used to compare two values.
+
+The result will be either true or false.
+
+Operator	Meaning
+==	Equal to
+!=	Not equal to
+>	Greater than
+<	Less than
+>=	Greater than or equal to
+<=	Less than or equal to
+
+Example:
+
+int a = 10;
+int b = 5;
+
+System.out.println(a > b);   // true
+System.out.println(a < b);   // false
+System.out.println(a == b);  // false
+System.out.println(a != b);  // true
+
+
+3. Logical Operators
+
+Used to combine multiple conditions.
+
+There are three main logical operators:
+
+Operator	Meaning
+&&	AND
+`	
+!	NOT
+&& — AND
+
+Both conditions must be true.
+
+int age = 25;
+
+System.out.println(age >= 18 && age <= 60);
+true
+|| — OR
+
+At least one condition must be true.
+
+int age = 15;
+
+System.out.println(age < 18 || age > 60);
+true
+! — NOT
+
+Reverses the result.
+
+boolean value = true;
+
+System.out.println(!value);
+
+Output:
+
+false
+
+
+4. Assignment Operators
+
+Used to assign or update values in variables.
+
+Operator	Example	Equivalent to
+=	a = 10	Assign
++=	a += 5	a = a + 5
+-=	a -= 5	a = a - 5
+*=	a *= 5	a = a * 5
+/=	a /= 5	a = a / 5
+%=	a %= 5	a = a % 5
+
+Example:
+
+int a = 10;
+
+a += 5;
+
+System.out.println(a);
+
+Output:
+
+15
+
+
+5. Unary Operators
+
+Unary operators work with only one operand.
+
+Common unary operators:
+
+++   Increment
+--   Decrement
++    Positive
+-    Negative
+!    NOT
+
+Example:
+
+int a = 10;
+
+a++;
+
+System.out.println(a);
+
+Output:
+
+11
+Pre-increment
+int a = 10;
+
+System.out.println(++a);
+
+Output:
+
+11
+
+First increment → then use the value.
+
+Post-increment
+int a = 10;
+
+System.out.println(a++);
+
+Output:
+
+10
+
+First use the value → then increment.
+
+After this, a becomes 11.
+
+6. Ternary Operator
+
+The ternary operator is a short form of if-else.
+
+Syntax
+condition ? value1 : value2;
+
+Example:
+
+int age = 20;
+
+String result = age >= 18 ? "Eligible" : "Not Eligible";
+
+System.out.println(result);
+
+Output:
+
+Eligible
+
+Think of it as:
+
+condition ? TRUE : FALSE
+
+7. Bitwise Operators
+
+Used to perform operations at the bit level.
+
+Operator	Meaning
+&	Bitwise AND
+`	`
+^	Bitwise XOR
+~	Bitwise NOT
+
+Example:
+
+int a = 5;
+int b = 3;
+
+System.out.println(a & b);
+
+8. Shift Operators
+
+Used to shift bits left or right.
+
+Operator	Meaning
+<<	Left shift
+>>	Right shift
+>>>	Unsigned right shift
+
+Example:
+
+int a = 5;
+
+System.out.println(a << 1);
+  
